@@ -22,7 +22,8 @@ Extra-source-files:
 library
   exposed-modules:      Foreign.CUDA.Random
 
-  other-modules:        
+  other-modules:        Foreign.CUDA.Random.Internal
+
 
   build-depends:        base == 4.*,
                         cuda >= 0.4.1
