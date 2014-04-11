@@ -20,6 +20,7 @@ Extra-tmp-files:
 Extra-source-files:     
 
 library
+  hs-source-dirs:       src
   exposed-modules:      Foreign.CUDA.Random
 
   other-modules:        Foreign.CUDA.Random.Internal
