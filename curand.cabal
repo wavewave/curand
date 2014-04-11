@@ -1,0 +1,39 @@
+name:                curand
+version:             0.0
+synopsis:            Haskell bindings for the CURAND library
+description:         The CURAND library is part of the CUDA developer toolkit.
+                     .
+                     <http://developer.nvidia.com/cuda-downloads>
+                     .
+                     
+homepage:            http://github.com/wavewave/curand
+license:             BSD3
+license-file:        LICENSE
+author:              Ian-Woo Kim <ianwookim@gmail.com>
+maintainer:          Ian-Woo Kim <ianwookim@gmail.com>
+
+category:            Foreign
+build-type:          Simple
+cabal-version:       >=1.8
+
+Extra-tmp-files:        
+Extra-source-files:     
+
+library
+  exposed-modules:      Foreign.CUDA.Random
+
+  other-modules:        
+
+  build-depends:        base == 4.*,
+                        cuda >= 0.4.1
+
+  build-tools:          c2hs >= 0.16
+  ghc-options:          -Wall -O2 -funbox-strict-fields -fwarn-tabs
+
+  include-dirs:         .
+  extra-libraries:      curand
+
+Source-repository head
+  Type:                 git
+  Location:             git://github.com/wavewave/curand.git
+
